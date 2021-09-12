@@ -36,7 +36,7 @@ return(0);
 //void SIZE(){
 //printf("Enter stack size");
 //scanf("%d",MAX);}
-void push(){                //function header:datatype void as called func recieves no input from calling                            program and returns any value 
+void push(){                //function header: datatype void as called function recieves no input from calling program and returns no value
 int val;
 if(top==MAX-1){             //check whether stack is full
 printf("\nStack is full!!");}
