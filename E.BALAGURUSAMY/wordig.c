@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-int n,q,rem;
+int n,q,rem,cnt;
 printf("Enter an integer");
 scanf("%d",&n);
 while(n!=0){
@@ -8,9 +8,9 @@ q=n/10;
 rem=n%10;
 printf("\nrem :%d",rem);
 switch(rem){
-case 1:printf("\nThe digits are:one (%d)",rem);
+case 1:printf("\n%d ",rem);
 break;
-case 2:printf("\nThe digits are:two (%d)",rem);
+case 2:printf("\nThe digits are:two (%d) ",rem);
 break;
 case 3:printf("\nThe digits are:three (%d)",rem);
 break;
@@ -30,7 +30,9 @@ case 0:printf("\nThe digits are:zero (%d)",rem);
 break;
 default:printf("\nThere is some error...");
 break;}
-n=q;}
+n=q;
+cnt++;};
+printf("\nThe number of digits are: %d",cnt);
 return 0;
 }
 
